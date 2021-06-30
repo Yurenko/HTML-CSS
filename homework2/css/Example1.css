@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(157, 204, 240, 0.604);
+}
+
+.wrapper-1 {
+    display: inline-block;
+    width: 470px;
+    padding: 20px;
+}
+
+.wrapper-2 {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.center {
+    width: 470px;
+    margin: 0 auto;
+}
