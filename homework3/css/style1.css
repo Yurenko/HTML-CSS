@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.list-items {
+    margin: 50px auto;
+}
+
+.list-items li {
+    float: left;
+}
+
+.list-items li:hover {
+    color: rgb(57, 174, 216);
+}
+
+.list-items li:not(:last-child) {
+    margin-right: 70px;
+}
+
+.number-list {
+    margin-bottom: 50px;
+}
+
+.number-list a {
+    color: #0E1116
+}
+
+.number-list li {
+    float: left;
+    background-color: #88292F;
+}
+
+.number-list li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.number-list li:nth-child(n+4) {
+    background-color: #5DB7DE;
+}
+
+.number-list li:nth-child(n+7) {
+    background-color: #0D5D56;
+}
+
+.arrow-item {
+    margin-bottom: 50px;
+}
+
+.arrow-item a::before {
+    content: '\2192';
+    margin-right: 15px;
+}
+
+.counter {
+    counter-reset: tor;
+}
+
+.counter li {
+    margin-bottom: 25px;
+}
+
+.counter li::before {
+    counter-increment: tor;
+    content: counter(tor);
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(79, 189, 57);
+}
