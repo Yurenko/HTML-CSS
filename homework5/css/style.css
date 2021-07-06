@@ -35,7 +35,6 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 90px;
-
 }
 
 .navigations {
@@ -56,10 +55,9 @@ img {
     text-decoration: none;
     color: #95e1d3;
     transition: color .2s linear;
-
 }
 
-.navigation-item::after {
+.navigation-item a::after {
     display: block;
     content: '';
     width: 100%;
@@ -68,12 +66,10 @@ img {
     margin-top: 12px;
     opacity: 0;
     transition: opacity .2s linear;
-
 }
 
-.navigation-item:hover::after {
+.navigation-item a:hover:after {
     opacity: 1;
-    
 }
 
 .navigation-item a:hover, .navigation-item a:focus {
@@ -199,20 +195,18 @@ img {
     position: relative;
 }
 
-.contain-image:hover {
+.team-social:hover .contain-image {
     transform: translate(-10px, -10px);
 }
 
 .contain-image {
     background: linear-gradient(to bottom, #fce38a, #f38181);
     transition: transform .2s linear;
-
 }
 
 .contain-image img {
     opacity: 1;
     transition: opacity .2s linear;
-    
 }
 
 .team-social:hover .contain-image img {
@@ -230,7 +224,7 @@ img {
     font-size: 0;
 }
 
- .team-social-item {
+.team-social-item {
     width: 55px;
     height: 55px;
     border: none;
@@ -239,8 +233,7 @@ img {
     background-color: #fce38a;
     cursor: pointer;
     opacity: 0;
-    transition: opacity .2s linear, background-color .2s linear,;
-
+    transition: opacity .2s linear, background-color .2s linear;
 }
 
 .team-social:hover .team-social-item {
@@ -254,6 +247,7 @@ img {
 .team-social-item:hover {
     background-color: #95e1d3;
 }
+
 .facebook {
     background-image: url(../img/facebook.png);
 }
@@ -269,8 +263,6 @@ img {
 .instagram {
     background-image: url(../img/instagram.png);
 }
-
-
 
 .info-team {
     margin: 30px auto;
@@ -291,9 +283,7 @@ img {
     color: #999999;
 }
 
-.footer::before {
-    content: '';
-    display: block;
+.footer {
     border-top: 1px solid #e5e5e5;
 }
 
@@ -305,7 +295,8 @@ img {
     color: #333333;
     font-weight: 500;
 }
-.footer-container span{
+
+.footer-container span {
     color: #f38181;
 }
 
@@ -321,7 +312,7 @@ img {
     height: 40px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700px;
+    font-weight: 700;
     padding: 8px 0 8px 0px;
     text-transform: uppercase;
     background-color: rgb(149, 225, 211);
