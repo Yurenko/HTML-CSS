@@ -1,0 +1,20 @@
+.content {
+    height: 100px;
+    background-color: yellow;
+}
+
+.sidebar {
+    height: 100px;
+    background-color: green;
+}
+.grid{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.item{
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+}
+.pink{
+    background-color: pink;
+}
