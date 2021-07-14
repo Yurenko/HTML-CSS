@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::after, *::before {
+    box-sizing: initial;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.list {
+    list-style: none;
+}
+
+.pretitle {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Montserrat', 'sant-serif';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.back-fon {
+    height: 1000px;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../img/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 30px;
+}
+
+.logo {
+    display: block;
+    font-family: 'Montserrat', 'sant-serif';
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.source {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+}
+
+.source__link {
+    display: inline-block;
+    font-family: 'Montserrat', 'sant-serif';
+    font-size: 14px;
+    padding: 0 2px;
+    transition: color .2s linear;
+}
+
+.source__link:hover {
+    color: #fce38a;
+}
+
+.source__link::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #fce38a;
+    margin-top: 12px;
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.source__link:hover:after {
+    opacity: 1;
+}
+
+.section {
+    width: 820px;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+
+.section__pretitle {
+    font-size: 72px;
+    color: #fff;
+}
+
+.section__title {
+    font-size: 150px;
+    line-height: 140px;
+    color: #fff;
+}
+
+.section__button {
+    display: block;
+    margin-top: 126px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    background-color: transparent;
+}
+
+.section__button:hover {
+    background-color: rgba(255, 222, 102, 0.919);
+}
+.main{
+    margin-top: 50px;
+}
+
+.main__pretitle {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main__title {
+    color: #333333;
+    margin-top: 20px;
+}
+
+.main__title::after {
+    display: block;
+    content: '';
+    margin: 42px auto 45px auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
+.title-name {
+    font-size: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card__item {
+    width: 382px;
+    height: 100px;
+    position: relative;
+    padding-left: 82px;
+    margin-bottom: 88px;
+    list-style: none;
+}
+.card__item svg{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    left: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    fill: #95e1d3;
+}
+
+.card__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.card__text {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+}
+
+.description {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 92px;
+    color: #999999;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.team-social {
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.team-social:hover .contain-image {
+    transform: translate(-10px, -10px);
+}
+
+.contain-image {
+    background: linear-gradient(to bottom, #fce38a, #f38181);
+    transition: transform .2s linear;
+}
+
+.team-social__img {
+    opacity: 1;
+    transition: opacity .2s linear;
+}
+
+.team-social:hover .team-social__img {
+    opacity: 0.1;
+}
+
+.icon-team {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+}
+
+.team-social__item {
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fce38a;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .2s linear, background-color .2s linear;
+}
+
+.team-social__item svg {
+    width: 30px;
+    height: 30px;
+    fill: #f38181;
+    transition: fill .2s linear;
+
+}
+
+.team-social:hover .team-social__item {
+    opacity: 1;
+}
+
+.team-social__item:not(:last-child) {
+    margin-right: 1px;
+}
+
+.team-social__item:hover svg {
+    fill: #fff;
+}
+
+.team-social__item:hover {
+    background-color: #f38181;
+}
+
+
+.info-team {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.info-team__name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.info-team__work {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #999999;
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    align-items: center;
+    color: #333333;
+    font-weight: 500;
+}
+
+.footer-container span {
+    color: #f38181;
+}
+
+.form {
+    width: 380px;
+    height: 40px;
+    display: inline-block;
+    font-size: 0;
+}
+
+.button-footer {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 8px 0 8px 0px;
+    text-transform: uppercase;
+    background-color: rgb(149, 225, 211);
+    color: #ffffff;
+    border: 0;
+}
+
+.input {
+    width: 230px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 8px 0 8px 12px;
+    border: 1px solid rgb(229, 229, 229);
+    color: rgb(229, 229, 229);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
